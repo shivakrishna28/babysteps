@@ -1,21 +1,17 @@
-import React from "react";
-import Header from "./components/Header";
-import Itinerary from "./components/Itinerary";
-import Pricing from "./components/Pricing";
-import TermsConditions from "./components/TermsConditions";
-import Footer from "./components/Footer";
+import React, { useState } from "react";
+import CountryList from "./components/CountryList";
 
-function App() {
+const App = () => {
+  const [countries, setCountries] = useState([]);
+
   return (
-    <div>
-      <Header />
-      <Itinerary />
-      <Pricing />
-      <TermsConditions />
-      <Footer />
+    <div className="container">
+      <h1>Country, State, and City Management</h1>
+      <CountryList countries={countries} setCountries={setCountries} />
     </div>
   );
-}
+};
 
 export default App;
+
 

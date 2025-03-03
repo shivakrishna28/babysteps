@@ -37,3 +37,8 @@
     ]
   }
 }
+"homepage": "https://shivakrishna28.github.io/exonect",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
